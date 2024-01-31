@@ -9,9 +9,12 @@ class DepartmentSeeder extends Seeder
 {
     public function run(): void
     {
-        Department::create(array(
+       /* Department::create(array(
             'name' => 'department1',
             'description'=>'description departament 1',
         ));
+        */
+
+        Department::factory(30)->create();
     }
 }

@@ -12,7 +12,7 @@ class EmployeeSeeder extends Seeder
 {
     public function run(): void
     {
-        Employee::create(array(
+        /*Employee::create(array(
             'name' => 'NameExample',
             'last_name' => 'Last_Name_Example',
             'dni' => '40234561',
@@ -24,5 +24,8 @@ class EmployeeSeeder extends Seeder
                                             ->where('description', 'description departament 1')
                                             ->first()->id,
         ));
+        */
+
+        Employee::factory(30)->create();
     }
 }
